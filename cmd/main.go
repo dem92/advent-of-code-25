@@ -1,6 +1,7 @@
 package main
 
 import (
+	"aoc25/internal/day1"
 	"log"
 	"os"
 )
@@ -14,6 +15,8 @@ func main() {
 	log.Printf("Run requested for %s", day)
 
 	switch day {
+	case "1a":
+		day1.Day1a()
 	default:
 		log.Fatal("Failed to match task arg with function")
 	}
