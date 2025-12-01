@@ -21,9 +21,9 @@ func Day1a() {
 
 		switch dir {
 		case 'L':
-			position = turn(position, -clicksToTurn)
+			position = turnA(position, -clicksToTurn)
 		case 'R':
-			position = turn(position, clicksToTurn)
+			position = turnA(position, clicksToTurn)
 		}
 
 		if position == 0 {
@@ -36,7 +36,7 @@ func Day1a() {
 	fmt.Println("Zeros: ", zeroCounter)
 }
 
-func turn(position, clicksToTurn int) int {
+func turnA(position, clicksToTurn int) int {
 	position = position + clicksToTurn
 
 	for position > maxValue {
