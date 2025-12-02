@@ -22,6 +22,8 @@ func main() {
 		day1.Day1b()
 	case "2a":
 		day2.Day2a()
+	case "2b":
+		day2.Day2b()
 	default:
 		log.Fatal("Failed to match task arg with function")
 	}
