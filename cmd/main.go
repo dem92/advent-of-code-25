@@ -7,6 +7,7 @@ import (
 	"aoc25/internal/day4"
 	"aoc25/internal/day5"
 	"aoc25/internal/day6"
+	"aoc25/internal/day7"
 	"log"
 	"os"
 )
@@ -44,6 +45,8 @@ func main() {
 		day6.Day6a()
 	case "6b":
 		day6.Day6b()
+	case "7a":
+		day7.Day7a()
 	default:
 		log.Fatal("Failed to match task arg with function")
 	}
