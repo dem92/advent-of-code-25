@@ -13,7 +13,7 @@ type day7b struct {
 
 func Day7b() {
 	filecontent := utils.ReadFile("7", false)
-	runeLines = utils.Get2dRuneArray(filecontent)
+	runeLines := utils.Get2dRuneArray(filecontent)
 	d7b := day7b{
 		runeLines:    runeLines,
 		splittersHit: map[string]int{},
